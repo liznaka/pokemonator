@@ -1,0 +1,3167 @@
+{
+  "pokemon": [
+    {
+      "name": "Bulbasaur",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.71 m",
+      "weight": "6.9 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "002",
+          "name": "Ivysaur"
+        },
+        {
+          "num": "003",
+          "name": "Venusaur"
+        }
+      ]
+    },
+    {
+      "name": "Ivysaur",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.99 m",
+      "weight": "13.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "001",
+          "name": "Bulbasaur"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "003",
+          "name": "Venusaur"
+        }
+      ]
+    },
+    {
+      "name": "Venusaur",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "2.01 m",
+      "weight": "100.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "001",
+          "name": "Bulbasaur"
+        },
+        {
+          "num": "002",
+          "name": "Ivysaur"
+        }
+      ]
+    },
+    {
+      "name": "Charmander",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "0.61 m",
+      "weight": "8.5 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "005",
+          "name": "Charmeleon"
+        },
+        {
+          "num": "006",
+          "name": "Charizard"
+        }
+      ]
+    },
+    {
+      "name": "Charmeleon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/005.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "1.09 m",
+      "weight": "19.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "004",
+          "name": "Charmander"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "006",
+          "name": "Charizard"
+        }
+      ]
+    },
+    {
+      "name": "Charizard",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png",
+      "type": [
+        "Fire",
+        "Flying"
+      ],
+      "height": "1.70 m",
+      "weight": "90.5 kg",
+      "weaknesses": [
+        "Water",
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "004",
+          "name": "Charmander"
+        },
+        {
+          "num": "005",
+          "name": "Charmeleon"
+        }
+      ]
+    },
+    {
+      "name": "Squirtle",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.51 m",
+      "weight": "9.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "008",
+          "name": "Wartortle"
+        },
+        {
+          "num": "009",
+          "name": "Blastoise"
+        }
+      ]
+    },
+    {
+      "name": "Wartortle",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/008.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.99 m",
+      "weight": "22.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "007",
+          "name": "Squirtle"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "009",
+          "name": "Blastoise"
+        }
+      ]
+    },
+    {
+      "name": "Blastoise",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.60 m",
+      "weight": "85.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "007",
+          "name": "Squirtle"
+        },
+        {
+          "num": "008",
+          "name": "Wartortle"
+        }
+      ]
+    },
+    {
+      "name": "Caterpie",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/010.png",
+      "type": [
+        "Bug"
+      ],
+      "height": "0.30 m",
+      "weight": "2.9 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "011",
+          "name": "Metapod"
+        },
+        {
+          "num": "012",
+          "name": "Butterfree"
+        }
+      ]
+    },
+    {
+      "name": "Metapod",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/011.png",
+      "type": [
+        "Bug"
+      ],
+      "height": "0.71 m",
+      "weight": "9.9 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "010",
+          "name": "Caterpie"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "012",
+          "name": "Butterfree"
+        }
+      ]
+    },
+    {
+      "name": "Butterfree",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/012.png",
+      "type": [
+        "Bug",
+        "Flying"
+      ],
+      "height": "1.09 m",
+      "weight": "32.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Electric",
+        "Ice",
+        "Flying",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "010",
+          "name": "Caterpie"
+        },
+        {
+          "num": "011",
+          "name": "Metapod"
+        }
+      ]
+    },
+    {
+      "name": "Weedle",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/013.png",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "height": "0.30 m",
+      "weight": "3.2 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Psychic",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "014",
+          "name": "Kakuna"
+        },
+        {
+          "num": "015",
+          "name": "Beedrill"
+        }
+      ]
+    },
+    {
+      "name": "Kakuna",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/014.png",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "height": "0.61 m",
+      "weight": "10.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Psychic",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "013",
+          "name": "Weedle"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "015",
+          "name": "Beedrill"
+        }
+      ]
+    },
+    {
+      "name": "Beedrill",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/015.png",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "height": "0.99 m",
+      "weight": "29.5 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Psychic",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "013",
+          "name": "Weedle"
+        },
+        {
+          "num": "014",
+          "name": "Kakuna"
+        }
+      ]
+    },
+    {
+      "name": "Pidgey",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/016.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "0.30 m",
+      "weight": "1.8 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "017",
+          "name": "Pidgeotto"
+        },
+        {
+          "num": "018",
+          "name": "Pidgeot"
+        }
+      ]
+    },
+    {
+      "name": "Pidgeotto",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/017.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "1.09 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "016",
+          "name": "Pidgey"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "018",
+          "name": "Pidgeot"
+        }
+      ]
+    },
+    {
+      "name": "Pidgeot",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/018.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "1.50 m",
+      "weight": "39.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "016",
+          "name": "Pidgey"
+        },
+        {
+          "num": "017",
+          "name": "Pidgeotto"
+        }
+      ]
+    },
+    {
+      "name": "Rattata",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/019.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.30 m",
+      "weight": "3.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "next_evolution": [
+        {
+          "num": "020",
+          "name": "Raticate"
+        }
+      ]
+    },
+    {
+      "name": "Raticate",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/020.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.71 m",
+      "weight": "18.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "prev_evolution": [
+        {
+          "num": "019",
+          "name": "Rattata"
+        }
+      ]
+    },
+    {
+      "name": "Spearow",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/021.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "0.30 m",
+      "weight": "2.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "022",
+          "name": "Fearow"
+        }
+      ]
+    },
+    {
+      "name": "Fearow",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/022.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "1.19 m",
+      "weight": "38.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "021",
+          "name": "Spearow"
+        }
+      ]
+    },
+    {
+      "name": "Ekans",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/023.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "2.01 m",
+      "weight": "6.9 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "024",
+          "name": "Arbok"
+        }
+      ]
+    },
+    {
+      "name": "Arbok",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/024.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "3.51 m",
+      "weight": "65.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "023",
+          "name": "Ekans"
+        }
+      ]
+    },
+    {
+      "name": "Pikachu",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.41 m",
+      "weight": "6.0 kg",
+      "weaknesses": [
+        "Ground"
+      ],
+      "next_evolution": [
+        {
+          "num": "026",
+          "name": "Raichu"
+        }
+      ]
+    },
+    {
+      "name": "Raichu",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.79 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "025",
+          "name": "Pikachu"
+        }
+      ]
+    },
+    {
+      "name": "Sandshrew",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/027.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.61 m",
+      "weight": "12.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "next_evolution": [
+        {
+          "num": "028",
+          "name": "Sandslash"
+        }
+      ]
+    },
+    {
+      "name": "Sandslash",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/028.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.99 m",
+      "weight": "29.5 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "prev_evolution": [
+        {
+          "num": "027",
+          "name": "Sandshrew"
+        }
+      ]
+    },
+    {
+      "name": "Nidoran \u2640 (Female)",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/029.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.41 m",
+      "weight": "7.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "030",
+          "name": "Nidorina"
+        },
+        {
+          "num": "031",
+          "name": "Nidoqueen"
+        }
+      ]
+    },
+    {
+      "name": "Nidorina",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/030.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.79 m",
+      "weight": "20.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "029",
+          "name": "Nidoran(Female)"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "031",
+          "name": "Nidoqueen"
+        }
+      ]
+    },
+    {
+      "name": "Nidoqueen",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/031.png",
+      "type": [
+        "Poison",
+        "Ground"
+      ],
+      "height": "1.30 m",
+      "weight": "60.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ice",
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "029",
+          "name": "Nidoran(Female)"
+        },
+        {
+          "num": "030",
+          "name": "Nidorina"
+        }
+      ]
+    },
+    {
+      "name": "Nidoran \u2642 (Male)",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/032.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.51 m",
+      "weight": "9.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "033",
+          "name": "Nidorino"
+        },
+        {
+          "num": "034",
+          "name": "Nidoking"
+        }
+      ]
+    },
+    {
+      "name": "Nidorino",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/033.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.89 m",
+      "weight": "19.5 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "032",
+          "name": "Nidoran(Male)"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "034",
+          "name": "Nidoking"
+        }
+      ]
+    },
+    {
+      "name": "Nidoking",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/034.png",
+      "type": [
+        "Poison",
+        "Ground"
+      ],
+      "height": "1.40 m",
+      "weight": "62.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ice",
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "032",
+          "name": "Nidoran(Male)"
+        },
+        {
+          "num": "033",
+          "name": "Nidorino"
+        }
+      ]
+    },
+    {
+      "name": "Clefairy",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/035.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.61 m",
+      "weight": "7.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "next_evolution": [
+        {
+          "num": "036",
+          "name": "Clefable"
+        }
+      ]
+    },
+    {
+      "name": "Clefable",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/036.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "1.30 m",
+      "weight": "40.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "prev_evolution": [
+        {
+          "num": "035",
+          "name": "Clefairy"
+        }
+      ]
+    },
+    {
+      "name": "Vulpix",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/037.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "0.61 m",
+      "weight": "9.9 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "038",
+          "name": "Ninetales"
+        }
+      ]
+    },
+    {
+      "name": "Ninetales",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/038.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "1.09 m",
+      "weight": "19.9 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "037",
+          "name": "Vulpix"
+        }
+      ]
+    },
+    {
+      "name": "Jigglypuff",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/039.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.51 m",
+      "weight": "5.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "next_evolution": [
+        {
+          "num": "040",
+          "name": "Wigglytuff"
+        }
+      ]
+    },
+    {
+      "name": "Wigglytuff",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/040.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.99 m",
+      "weight": "12.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "prev_evolution": [
+        {
+          "num": "039",
+          "name": "Jigglypuff"
+        }
+      ]
+    },
+    {
+      "name": "Zubat",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/041.png",
+      "type": [
+        "Poison",
+        "Flying"
+      ],
+      "height": "0.79 m",
+      "weight": "7.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Ice",
+        "Psychic",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "042",
+          "name": "Golbat"
+        }
+      ]
+    },
+    {
+      "name": "Golbat",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/042.png",
+      "type": [
+        "Poison",
+        "Flying"
+      ],
+      "height": "1.60 m",
+      "weight": "55.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Ice",
+        "Psychic",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "041",
+          "name": "Zubat"
+        }
+      ]
+    },
+    {
+      "name": "Oddish",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/043.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.51 m",
+      "weight": "5.4 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "044",
+          "name": "Gloom"
+        },
+        {
+          "num": "045",
+          "name": "Vileplume"
+        }
+      ]
+    },
+    {
+      "name": "Gloom",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/044.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.79 m",
+      "weight": "8.6 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "043",
+          "name": "Oddish"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "045",
+          "name": "Vileplume"
+        }
+      ]
+    },
+    {
+      "name": "Vileplume",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/045.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "1.19 m",
+      "weight": "18.6 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "043",
+          "name": "Oddish"
+        },
+        {
+          "num": "044",
+          "name": "Gloom"
+        }
+      ]
+    },
+    {
+      "name": "Paras",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/046.png",
+      "type": [
+        "Bug",
+        "Grass"
+      ],
+      "height": "0.30 m",
+      "weight": "5.4 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Poison",
+        "Flying",
+        "Bug",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "047",
+          "name": "Parasect"
+        }
+      ]
+    },
+    {
+      "name": "Parasect",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/047.png",
+      "type": [
+        "Bug",
+        "Grass"
+      ],
+      "height": "0.99 m",
+      "weight": "29.5 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Poison",
+        "Flying",
+        "Bug",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "046",
+          "name": "Paras"
+        }
+      ]
+    },
+    {
+      "name": "Venonat",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/048.png",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "height": "0.99 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Psychic",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "049",
+          "name": "Venomoth"
+        }
+      ]
+    },
+    {
+      "name": "Venomoth",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/049.png",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "height": "1.50 m",
+      "weight": "12.5 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Psychic",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "048",
+          "name": "Venonat"
+        }
+      ]
+    },
+    {
+      "name": "Diglett",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/050.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.20 m",
+      "weight": "0.8 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "next_evolution": [
+        {
+          "num": "051",
+          "name": "Dugtrio"
+        }
+      ]
+    },
+    {
+      "name": "Dugtrio",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/051.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.71 m",
+      "weight": "33.3 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "prev_evolution": [
+        {
+          "num": "050",
+          "name": "Diglett"
+        }
+      ]
+    },
+    {
+      "name": "Meowth",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/052.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.41 m",
+      "weight": "4.2 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "next_evolution": [
+        {
+          "num": "053",
+          "name": "Persian"
+        }
+      ]
+    },
+    {
+      "name": "Persian",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/053.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.99 m",
+      "weight": "32.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "prev_evolution": [
+        {
+          "num": "052",
+          "name": "Meowth"
+        }
+      ]
+    },
+    {
+      "name": "Psyduck",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/054.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.79 m",
+      "weight": "19.6 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "055",
+          "name": "Golduck"
+        }
+      ]
+    },
+    {
+      "name": "Golduck",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/055.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.70 m",
+      "weight": "76.6 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "054",
+          "name": "Psyduck"
+        }
+      ]
+    },
+    {
+      "name": "Mankey",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/056.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "0.51 m",
+      "weight": "28.0 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "next_evolution": [
+        {
+          "num": "057",
+          "name": "Primeape"
+        }
+      ]
+    },
+    {
+      "name": "Primeape",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/057.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "0.99 m",
+      "weight": "32.0 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "056",
+          "name": "Mankey"
+        }
+      ]
+    },
+    {
+      "name": "Growlithe",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/058.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "0.71 m",
+      "weight": "19.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "059",
+          "name": "Arcanine"
+        }
+      ]
+    },
+    {
+      "name": "Arcanine",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/059.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "1.91 m",
+      "weight": "155.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "058",
+          "name": "Growlithe"
+        }
+      ]
+    },
+    {
+      "name": "Poliwag",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/060.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.61 m",
+      "weight": "12.4 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "061",
+          "name": "Poliwhirl"
+        },
+        {
+          "num": "062",
+          "name": "Poliwrath"
+        }
+      ]
+    },
+    {
+      "name": "Poliwhirl",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/061.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.99 m",
+      "weight": "20.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "060",
+          "name": "Poliwag"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "062",
+          "name": "Poliwrath"
+        }
+      ]
+    },
+    {
+      "name": "Poliwrath",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/062.png",
+      "type": [
+        "Water",
+        "Fighting"
+      ],
+      "height": "1.30 m",
+      "weight": "54.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "060",
+          "name": "Poliwag"
+        },
+        {
+          "num": "061",
+          "name": "Poliwhirl"
+        }
+      ]
+    },
+    {
+      "name": "Abra",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/063.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "0.89 m",
+      "weight": "19.5 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "next_evolution": [
+        {
+          "num": "064",
+          "name": "Kadabra"
+        },
+        {
+          "num": "065",
+          "name": "Alakazam"
+        }
+      ]
+    },
+    {
+      "name": "Kadabra",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/064.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "1.30 m",
+      "weight": "56.5 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "063",
+          "name": "Abra"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "065",
+          "name": "Alakazam"
+        }
+      ]
+    },
+    {
+      "name": "Alakazam",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/065.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "1.50 m",
+      "weight": "48.0 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "063",
+          "name": "Abra"
+        },
+        {
+          "num": "064",
+          "name": "Kadabra"
+        }
+      ]
+    },
+    {
+      "name": "Machop",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/066.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "0.79 m",
+      "weight": "19.5 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "next_evolution": [
+        {
+          "num": "067",
+          "name": "Machoke"
+        },
+        {
+          "num": "068",
+          "name": "Machamp"
+        }
+      ]
+    },
+    {
+      "name": "Machoke",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/067.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "1.50 m",
+      "weight": "70.5 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "066",
+          "name": "Machop"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "068",
+          "name": "Machamp"
+        }
+      ]
+    },
+    {
+      "name": "Machamp",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/068.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "1.60 m",
+      "weight": "130.0 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "066",
+          "name": "Machop"
+        },
+        {
+          "num": "067",
+          "name": "Machoke"
+        }
+      ]
+    },
+    {
+      "name": "Bellsprout",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/069.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.71 m",
+      "weight": "4.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "070",
+          "name": "Weepinbell"
+        },
+        {
+          "num": "071",
+          "name": "Victreebel"
+        }
+      ]
+    },
+    {
+      "name": "Weepinbell",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/070.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "0.99 m",
+      "weight": "6.4 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "069",
+          "name": "Bellsprout"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "071",
+          "name": "Victreebel"
+        }
+      ]
+    },
+    {
+      "name": "Victreebel",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/071.png",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "height": "1.70 m",
+      "weight": "15.5 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Flying",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "069",
+          "name": "Bellsprout"
+        },
+        {
+          "num": "070",
+          "name": "Weepinbell"
+        }
+      ]
+    },
+    {
+      "name": "Tentacool",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/072.png",
+      "type": [
+        "Water",
+        "Poison"
+      ],
+      "height": "0.89 m",
+      "weight": "45.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "073",
+          "name": "Tentacruel"
+        }
+      ]
+    },
+    {
+      "name": "Tentacruel",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/073.png",
+      "type": [
+        "Water",
+        "Poison"
+      ],
+      "height": "1.60 m",
+      "weight": "55.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "072",
+          "name": "Tentacool"
+        }
+      ]
+    },
+    {
+      "name": "Geodude",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/074.png",
+      "type": [
+        "Rock",
+        "Ground"
+      ],
+      "height": "0.41 m",
+      "weight": "20.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ],
+      "next_evolution": [
+        {
+          "num": "075",
+          "name": "Graveler"
+        },
+        {
+          "num": "076",
+          "name": "Golem"
+        }
+      ]
+    },
+    {
+      "name": "Graveler",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/075.png",
+      "type": [
+        "Rock",
+        "Ground"
+      ],
+      "height": "0.99 m",
+      "weight": "105.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ],
+      "prev_evolution": [
+        {
+          "num": "074",
+          "name": "Geodude"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "076",
+          "name": "Golem"
+        }
+      ]
+    },
+    {
+      "name": "Golem",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/076.png",
+      "type": [
+        "Rock",
+        "Ground"
+      ],
+      "height": "1.40 m",
+      "weight": "300.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ],
+      "prev_evolution": [
+        {
+          "num": "074",
+          "name": "Geodude"
+        },
+        {
+          "num": "075",
+          "name": "Graveler"
+        }
+      ]
+    },
+    {
+      "name": "Ponyta",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/077.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "0.99 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "078",
+          "name": "Rapidash"
+        }
+      ]
+    },
+    {
+      "name": "Rapidash",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/078.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "1.70 m",
+      "weight": "95.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "077",
+          "name": "Ponyta"
+        }
+      ]
+    },
+    {
+      "name": "Slowpoke",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/079.png",
+      "type": [
+        "Water",
+        "Psychic"
+      ],
+      "height": "1.19 m",
+      "weight": "36.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "next_evolution": [
+        {
+          "num": "080",
+          "name": "Slowbro"
+        }
+      ]
+    },
+    {
+      "name": "Slowbro",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/080.png",
+      "type": [
+        "Water",
+        "Psychic"
+      ],
+      "height": "1.60 m",
+      "weight": "78.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "079",
+          "name": "Slowpoke"
+        }
+      ]
+    },
+    {
+      "name": "Magnemite",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/081.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.30 m",
+      "weight": "6.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Water",
+        "Ground"
+      ],
+      "next_evolution": [
+        {
+          "num": "082",
+          "name": "Magneton"
+        }
+      ]
+    },
+    {
+      "name": "Magneton",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/082.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.99 m",
+      "weight": "60.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Water",
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "081",
+          "name": "Magnemite"
+        }
+      ]
+    },
+    {
+      "name": "Farfetch'd",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/083.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "0.79 m",
+      "weight": "15.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Doduo",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/084.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "1.40 m",
+      "weight": "39.2 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "next_evolution": [
+        {
+          "num": "085",
+          "name": "Dodrio"
+        }
+      ]
+    },
+    {
+      "name": "Dodrio",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/085.png",
+      "type": [
+        "Normal",
+        "Flying"
+      ],
+      "height": "1.80 m",
+      "weight": "85.2 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "084",
+          "name": "Doduo"
+        }
+      ]
+    },
+    {
+      "name": "Seel",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/086.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.09 m",
+      "weight": "90.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "087",
+          "name": "Dewgong"
+        }
+      ]
+    },
+    {
+      "name": "Dewgong",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/087.png",
+      "type": [
+        "Water",
+        "Ice"
+      ],
+      "height": "1.70 m",
+      "weight": "120.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "086",
+          "name": "Seel"
+        }
+      ]
+    },
+    {
+      "name": "Grimer",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/088.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.89 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "089",
+          "name": "Muk"
+        }
+      ]
+    },
+    {
+      "name": "Muk",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/089.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "1.19 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "088",
+          "name": "Grimer"
+        }
+      ]
+    },
+    {
+      "name": "Shellder",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/090.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.30 m",
+      "weight": "4.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "091",
+          "name": "Cloyster"
+        }
+      ]
+    },
+    {
+      "name": "Cloyster",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/091.png",
+      "type": [
+        "Water",
+        "Ice"
+      ],
+      "height": "1.50 m",
+      "weight": "132.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "090",
+          "name": "Shellder"
+        }
+      ]
+    },
+    {
+      "name": "Gastly",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/092.png",
+      "type": [
+        "Ghost",
+        "Poison"
+      ],
+      "height": "1.30 m",
+      "weight": "0.1 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic",
+        "Ghost",
+        "Dark"
+      ],
+      "next_evolution": [
+        {
+          "num": "093",
+          "name": "Haunter"
+        },
+        {
+          "num": "094",
+          "name": "Gengar"
+        }
+      ]
+    },
+    {
+      "name": "Haunter",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/093.png",
+      "type": [
+        "Ghost",
+        "Poison"
+      ],
+      "height": "1.60 m",
+      "weight": "0.1 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "092",
+          "name": "Gastly"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "094",
+          "name": "Gengar"
+        }
+      ]
+    },
+    {
+      "name": "Gengar",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png",
+      "type": [
+        "Ghost",
+        "Poison"
+      ],
+      "height": "1.50 m",
+      "weight": "40.5 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "092",
+          "name": "Gastly"
+        },
+        {
+          "num": "093",
+          "name": "Haunter"
+        }
+      ]
+    },
+    {
+      "name": "Onix",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/095.png",
+      "type": [
+        "Rock",
+        "Ground"
+      ],
+      "height": "8.79 m",
+      "weight": "210.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ]
+    },
+    {
+      "name": "Drowzee",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/096.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "0.99 m",
+      "weight": "32.4 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "next_evolution": [
+        {
+          "num": "097",
+          "name": "Hypno"
+        }
+      ]
+    },
+    {
+      "name": "Hypno",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/097.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "1.60 m",
+      "weight": "75.6 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "096",
+          "name": "Drowzee"
+        }
+      ]
+    },
+    {
+      "name": "Krabby",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/098.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.41 m",
+      "weight": "6.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "099",
+          "name": "Kingler"
+        }
+      ]
+    },
+    {
+      "name": "Kingler",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/099.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.30 m",
+      "weight": "60.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "098",
+          "name": "Krabby"
+        }
+      ]
+    },
+    {
+      "name": "Voltorb",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/100.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.51 m",
+      "weight": "10.4 kg",
+      "weaknesses": [
+        "Ground"
+      ],
+      "next_evolution": [
+        {
+          "num": "101",
+          "name": "Electrode"
+        }
+      ]
+    },
+    {
+      "name": "Electrode",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/101.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "1.19 m",
+      "weight": "66.6 kg",
+      "weaknesses": [
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "100",
+          "name": "Voltorb"
+        }
+      ]
+    },
+    {
+      "name": "Exeggcute",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/102.png",
+      "type": [
+        "Grass",
+        "Psychic"
+      ],
+      "height": "0.41 m",
+      "weight": "2.5 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Poison",
+        "Flying",
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "next_evolution": [
+        {
+          "num": "103",
+          "name": "Exeggutor"
+        }
+      ]
+    },
+    {
+      "name": "Exeggutor",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/103.png",
+      "type": [
+        "Grass",
+        "Psychic"
+      ],
+      "height": "2.01 m",
+      "weight": "120.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Poison",
+        "Flying",
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "102",
+          "name": "Exeggcute"
+        }
+      ]
+    },
+    {
+      "name": "Cubone",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/104.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.41 m",
+      "weight": "6.5 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "next_evolution": [
+        {
+          "num": "105",
+          "name": "Marowak"
+        }
+      ]
+    },
+    {
+      "name": "Marowak",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/105.png",
+      "type": [
+        "Ground"
+      ],
+      "height": "0.99 m",
+      "weight": "45.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice"
+      ],
+      "prev_evolution": [
+        {
+          "num": "104",
+          "name": "Cubone"
+        }
+      ]
+    },
+    {
+      "name": "Hitmonlee",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/106.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "1.50 m",
+      "weight": "49.8 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ]
+    },
+    {
+      "name": "Hitmonchan",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/107.png",
+      "type": [
+        "Fighting"
+      ],
+      "height": "1.40 m",
+      "weight": "50.2 kg",
+      "weaknesses": [
+        "Flying",
+        "Psychic",
+        "Fairy"
+      ]
+    },
+    {
+      "name": "Lickitung",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/108.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "1.19 m",
+      "weight": "65.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Koffing",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/109.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "0.61 m",
+      "weight": "1.0 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "next_evolution": [
+        {
+          "num": "110",
+          "name": "Weezing"
+        }
+      ]
+    },
+    {
+      "name": "Weezing",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/110.png",
+      "type": [
+        "Poison"
+      ],
+      "height": "1.19 m",
+      "weight": "9.5 kg",
+      "weaknesses": [
+        "Ground",
+        "Psychic"
+      ],
+      "prev_evolution": [
+        {
+          "num": "109",
+          "name": "Koffing"
+        }
+      ]
+    },
+    {
+      "name": "Rhyhorn",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/111.png",
+      "type": [
+        "Ground",
+        "Rock"
+      ],
+      "height": "0.99 m",
+      "weight": "115.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ],
+      "next_evolution": [
+        {
+          "num": "112",
+          "name": "Rhydon"
+        }
+      ]
+    },
+    {
+      "name": "Rhydon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/112.png",
+      "type": [
+        "Ground",
+        "Rock"
+      ],
+      "height": "1.91 m",
+      "weight": "120.0 kg",
+      "weaknesses": [
+        "Water",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Ground",
+        "Steel"
+      ],
+      "prev_evolution": [
+        {
+          "num": "111",
+          "name": "Rhyhorn"
+        }
+      ]
+    },
+    {
+      "name": "Chansey",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/113.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "1.09 m",
+      "weight": "34.6 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Tangela",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/114.png",
+      "type": [
+        "Grass"
+      ],
+      "height": "0.99 m",
+      "weight": "35.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Ice",
+        "Poison",
+        "Flying",
+        "Bug"
+      ]
+    },
+    {
+      "name": "Kangaskhan",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/115.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "2.21 m",
+      "weight": "80.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Horsea",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/116.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.41 m",
+      "weight": "8.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "117",
+          "name": "Seadra"
+        }
+      ]
+    },
+    {
+      "name": "Seadra",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/117.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.19 m",
+      "weight": "25.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "116",
+          "name": "Horsea"
+        }
+      ]
+    },
+    {
+      "name": "Goldeen",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/118.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.61 m",
+      "weight": "15.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "119",
+          "name": "Seaking"
+        }
+      ]
+    },
+    {
+      "name": "Seaking",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/119.png",
+      "type": [
+        "Water"
+      ],
+      "height": "1.30 m",
+      "weight": "39.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "118",
+          "name": "Goldeen"
+        }
+      ]
+    },
+    {
+      "name": "Staryu",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/120.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.79 m",
+      "weight": "34.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "121",
+          "name": "Starmie"
+        }
+      ]
+    },
+    {
+      "name": "Starmie",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/121.png",
+      "type": [
+        "Water",
+        "Psychic"
+      ],
+      "height": "1.09 m",
+      "weight": "80.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Bug",
+        "Ghost",
+        "Dark"
+      ],
+      "prev_evolution": [
+        {
+          "num": "120",
+          "name": "Staryu"
+        }
+      ]
+    },
+    {
+      "name": "Mr. Mime",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/122.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "1.30 m",
+      "weight": "54.5 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ]
+    },
+    {
+      "name": "Scyther",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/123.png",
+      "type": [
+        "Bug",
+        "Flying"
+      ],
+      "height": "1.50 m",
+      "weight": "56.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Electric",
+        "Ice",
+        "Flying",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Jynx",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/124.png",
+      "type": [
+        "Ice",
+        "Psychic"
+      ],
+      "height": "1.40 m",
+      "weight": "40.6 kg",
+      "weaknesses": [
+        "Fire",
+        "Bug",
+        "Rock",
+        "Ghost",
+        "Dark",
+        "Steel"
+      ]
+    },
+    {
+      "name": "Electabuzz",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/125.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "1.09 m",
+      "weight": "30.0 kg",
+      "weaknesses": [
+        "Ground"
+      ]
+    },
+    {
+      "name": "Magmar",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/126.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "1.30 m",
+      "weight": "44.5 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Pinsir",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/127.png",
+      "type": [
+        "Bug"
+      ],
+      "height": "1.50 m",
+      "weight": "55.0 kg",
+      "weaknesses": [
+        "Fire",
+        "Flying",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Tauros",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/128.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "1.40 m",
+      "weight": "88.4 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Magikarp",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/129.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.89 m",
+      "weight": "10.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "next_evolution": [
+        {
+          "num": "130",
+          "name": "Gyarados"
+        }
+      ]
+    },
+    {
+      "name": "Gyarados",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/130.png",
+      "type": [
+        "Water",
+        "Flying"
+      ],
+      "height": "6.50 m",
+      "weight": "235.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "129",
+          "name": "Magikarp"
+        }
+      ]
+    },
+    {
+      "name": "Lapras",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/131.png",
+      "type": [
+        "Water",
+        "Ice"
+      ],
+      "height": "2.49 m",
+      "weight": "220.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Ditto",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/132.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.30 m",
+      "weight": "4.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Eevee",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.30 m",
+      "weight": "6.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ],
+      "next_evolution": [
+        {
+          "num": "134",
+          "name": "Vaporeon"
+        },
+        {
+          "num": "135",
+          "name": "Jolteon"
+        },
+        {
+          "num": "136",
+          "name": "Flareon"
+        }
+      ]
+    },
+    {
+      "name": "Vaporeon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/134.png",
+      "type": [
+        "Water"
+      ],
+      "height": "0.99 m",
+      "weight": "29.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass"
+      ],
+      "prev_evolution": [
+        {
+          "num": "133",
+          "name": "Eevee"
+        }
+      ]
+    },
+    {
+      "name": "Jolteon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/135.png",
+      "type": [
+        "Electric"
+      ],
+      "height": "0.79 m",
+      "weight": "24.5 kg",
+      "weaknesses": [
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "133",
+          "name": "Eevee"
+        }
+      ]
+    },
+    {
+      "name": "Flareon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/136.png",
+      "type": [
+        "Fire"
+      ],
+      "height": "0.89 m",
+      "weight": "25.0 kg",
+      "weaknesses": [
+        "Water",
+        "Ground",
+        "Rock"
+      ],
+      "prev_evolution": [
+        {
+          "num": "133",
+          "name": "Eevee"
+        }
+      ]
+    },
+    {
+      "name": "Porygon",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "0.79 m",
+      "weight": "36.5 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Omanyte",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/138.png",
+      "type": [
+        "Rock",
+        "Water"
+      ],
+      "height": "0.41 m",
+      "weight": "7.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Ground"
+      ],
+      "next_evolution": [
+        {
+          "num": "139",
+          "name": "Omastar"
+        }
+      ]
+    },
+    {
+      "name": "Omastar",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/139.png",
+      "type": [
+        "Rock",
+        "Water"
+      ],
+      "height": "0.99 m",
+      "weight": "35.0 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "138",
+          "name": "Omanyte"
+        }
+      ]
+    },
+    {
+      "name": "Kabuto",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/140.png",
+      "type": [
+        "Rock",
+        "Water"
+      ],
+      "height": "0.51 m",
+      "weight": "11.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Ground"
+      ],
+      "next_evolution": [
+        {
+          "num": "141",
+          "name": "Kabutops"
+        }
+      ]
+    },
+    {
+      "name": "Kabutops",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/141.png",
+      "type": [
+        "Rock",
+        "Water"
+      ],
+      "height": "1.30 m",
+      "weight": "40.5 kg",
+      "weaknesses": [
+        "Electric",
+        "Grass",
+        "Fighting",
+        "Ground"
+      ],
+      "prev_evolution": [
+        {
+          "num": "140",
+          "name": "Kabuto"
+        }
+      ]
+    },
+    {
+      "name": "Aerodactyl",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/142.png",
+      "type": [
+        "Rock",
+        "Flying"
+      ],
+      "height": "1.80 m",
+      "weight": "59.0 kg",
+      "weaknesses": [
+        "Water",
+        "Electric",
+        "Ice",
+        "Rock",
+        "Steel"
+      ]
+    },
+    {
+      "name": "Snorlax",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/143.png",
+      "type": [
+        "Normal"
+      ],
+      "height": "2.11 m",
+      "weight": "460.0 kg",
+      "weaknesses": [
+        "Fighting"
+      ]
+    },
+    {
+      "name": "Articuno",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/144.png",
+      "type": [
+        "Ice",
+        "Flying"
+      ],
+      "height": "1.70 m",
+      "weight": "55.4 kg",
+      "weaknesses": [
+        "Fire",
+        "Electric",
+        "Rock",
+        "Steel"
+      ]
+    },
+    {
+      "name": "Zapdos",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/145.png",
+      "type": [
+        "Electric",
+        "Flying"
+      ],
+      "height": "1.60 m",
+      "weight": "52.6 kg",
+      "weaknesses": [
+        "Ice",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Moltres",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/146.png",
+      "type": [
+        "Fire",
+        "Flying"
+      ],
+      "height": "2.01 m",
+      "weight": "60.0 kg",
+      "weaknesses": [
+        "Water",
+        "Electric",
+        "Rock"
+      ]
+    },
+    {
+      "name": "Dratini",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/147.png",
+      "type": [
+        "Dragon"
+      ],
+      "height": "1.80 m",
+      "weight": "3.3 kg",
+      "weaknesses": [
+        "Ice",
+        "Dragon",
+        "Fairy"
+      ],
+      "next_evolution": [
+        {
+          "num": "148",
+          "name": "Dragonair"
+        },
+        {
+          "num": "149",
+          "name": "Dragonite"
+        }
+      ]
+    },
+    {
+      "name": "Dragonair",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/148.png",
+      "type": [
+        "Dragon"
+      ],
+      "height": "3.99 m",
+      "weight": "16.5 kg",
+      "weaknesses": [
+        "Ice",
+        "Dragon",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "147",
+          "name": "Dratini"
+        }
+      ],
+      "next_evolution": [
+        {
+          "num": "149",
+          "name": "Dragonite"
+        }
+      ]
+    },
+    {
+      "name": "Dragonite",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/149.png",
+      "type": [
+        "Dragon",
+        "Flying"
+      ],
+      "height": "2.21 m",
+      "weight": "210.0 kg",
+      "weaknesses": [
+        "Ice",
+        "Rock",
+        "Dragon",
+        "Fairy"
+      ],
+      "prev_evolution": [
+        {
+          "num": "147",
+          "name": "Dratini"
+        },
+        {
+          "num": "148",
+          "name": "Dragonair"
+        }
+      ]
+    },
+    {
+      "name": "Mewtwo",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "2.01 m",
+      "weight": "122.0 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ]
+    },
+    {
+      "name": "Mew",
+      "img": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/151.png",
+      "type": [
+        "Psychic"
+      ],
+      "height": "0.41 m",
+      "weight": "4.0 kg",
+      "weaknesses": [
+        "Bug",
+        "Ghost",
+        "Dark"
+      ]
+    }
+  ]
+}

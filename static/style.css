@@ -1,0 +1,86 @@
+body {
+    font-family:'Bebas Neue';
+    font-weight: bold;
+    color:white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #a8d0e6, #f0f4f8);
+
+}
+
+.game-window {
+    background: #4f7090; /* lysere og mindre kontrast */
+    border: 4px solid #bee8ff;
+    padding-bottom: 8px;
+    box-shadow:
+        0 0 25px rgba(168,208,230,0.3),
+        inset 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+.title {
+    font-size: clamp(60px, 8vw, 100px);
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+@keyframes card-float {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); } /* rolig zoom inn */
+}
+
+.pokemon-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+
+  animation: card-float 2s ease-in-out infinite;
+}
+
+.pokemon-name {
+    color: black;
+    text-shadow: 0 2px 5px rgba(255, 177, 177, 0.2);
+}
+
+.pokemon-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.start-button {
+  padding: 20px 40px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffcb05;
+  color: #3b4cca;
+  font-weight: bold;
+  font-family:'Bebas Neue';
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 0 #c9a400;
+}
+.start-button:hover {
+  background-color: #f5b700;
+  transform: scale(1.05);
+  transition: 0.2s;
+  transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 0 #b89600;
+}

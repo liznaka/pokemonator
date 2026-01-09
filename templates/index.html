@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokemonator!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="game-window">
+            <h1 class="title">Pokemonator!</h1>
+            <p>Choose a Pokémon from generation 1 and I will guess it!</p>
+            <h1>Click the button down below when you're ready</h1>
+
+            <div class="pokemon-list">
+                {% for p in pokemon %}
+                <div class="pokemon-card">
+                    <img src="{{ p.img }}" alt="{{ p.name}}" class="pokemon-img">
+                    <p class="pokemon-name">{{ p.name }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <form action="#" method="get" id="start">
+                <button type="submit" class="start-button">I've chosen one!</button>
+            </form>
+        </div>
+    </body>
+</html>
