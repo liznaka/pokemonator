@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question - Pokémonator</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="game-window">
+            <h1 class="title">Pokémonator!</h1>
+            
+            <h2>Answer the question to help me guess your Pokémon!</h2>
+
+            {% if question.attribute == "type" %}
+                <h3>Is your Pokémon a <strong>{{ question.value }}</strong> type?</h3>
+            {% elif question.attribute == "weaknesses" %}
+                <h3>Does your Pokémon have <strong>{{ question.value }}</strong> as a weakness?</h3>
+            {% elif question.attribute == "fully_evolved" %}
+                <h3>Is your Pokémon fully evolved?</h3>
+            {% elif question.attribute == "num_lt" %}
+                <h3>Is your Pokémon’s Pokédex number <strong>less than {{ "%04d"|format(question.value|int) }}</strong>?</h3>
+            {% endif %}
+
+            <form action="/guess" method="post">
+                <div class="answer-buttons">
+                    <button type="submit" name="answer" value="yes" class="button">Yes</button>
+                    <button type="submit" name="answer" value="no" class="button">No</button>
+                </div>
+
+
+                {% for p in remaining %}
+                    <input type="hidden" name="remaining[]" value="{{ p.num }}">
+                {% endfor %}
+
+                <input type="hidden" name="attribute" value="{{ question.attribute }}">
+                <input type="hidden" name="value" value="{{ question.value }}">
+
+                <input type="hidden" name="asked_questions" value='{{ asked_questions|safe }}'>
+            </form>
+
+            <p>Remaining Pokémon: {{ remaining|length }}</p>
+        </div>
+    </body>
+</html>
