@@ -25,7 +25,7 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
     - pip
 
 2. Install dependencies
-    - ` pip install flask`
+    - `pip install flask`
 
 3. Start the server
     - `python/python3 main.py`
