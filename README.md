@@ -22,10 +22,12 @@ A web-based guessing game inspired by the well-known Akinator. The system uses h
     - pip
 
 2. Install dependencies
-    - ```bash pip install flask
+    - ```bash
+    pip install flask
 
 3. Start the server
-    - ```bash python/python3 main.py
+    - ```
+    bash python/python3 main.py
 
 4. Open the local Flask server URL shown in the terminal in your browser
     - (usually: http://xxx.x.x.x:xxxx)
