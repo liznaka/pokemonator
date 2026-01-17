@@ -108,6 +108,7 @@ p {
     box-shadow: 
         0 2px 5px rgba(0,0,0,0.2), 
         0 0 20px rgba(255,255,255,0.6);
+    
     transform: scale(1.05);
     transition: 0.2s;
     transform: translateY(-2px) scale(1.05);
@@ -137,12 +138,14 @@ p {
   letter-spacing: 0.5px;
   box-shadow: 0 4px 0 #c9a400;
 }
+
 .button:hover {
   background-color: #f5b700;
+  box-shadow: 0 6px 0 #b89600;
+  
   transform: scale(1.05);
   transition: 0.2s;
   transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 6px 0 #b89600;
 }
 
 .answer-buttons {
@@ -156,6 +159,7 @@ p {
     color: black;
     text-align: center;
     animation: none;
+    width: 190px;
     box-shadow: 
         0 2px 5px rgba(0,0,0,0.2), 
         0 0 20px rgba(255,255,255,0.6);

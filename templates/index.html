@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,16 +8,17 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <div class="game-window">
             <h1 class="title">Pokémonator!</h1>
-            <h2>Memorize a Pokémon from first generation for me to guess,<br>
-                click on any Pokémon to redirect to Pokédex-info!</h2>
+            <h2>Memorize a Pokémon from first generation for me to guess!<br>
+                Forgot info about it? - Click on any Pokémon card to redirect to Pokédex-info!</h2>
             <h1>Click the button down below when you're ready</h1>
 
             <div class="pokemon-list">
                 {% for p in pokemon %}
-                <!-- link for Pokémon cards -->
+                <!-- link for Pokémon cards at Pokédex -->
                 <a href="https://www.pokemon.com/us/pokedex/{{ p.name | replace('(', '') | replace(')', '') | lower | replace(' ', '-') }}"
                 target="_blank" class="pokemon-card">
                     <img src="{{ p.img }}" alt="{{ p.name}}" class="pokemon-img">

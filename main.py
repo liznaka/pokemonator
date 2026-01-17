@@ -1,43 +1,42 @@
+## imports ##
 from flask import Flask, render_template, request, redirect
 import json
 
 from pokemonguesser import Pokemon, PokemonGuesser
 
-app = Flask(__name__)
+main = Flask(__name__)
 
-# ----------------------
-# Load Pokémon data
-# ----------------------
+## load Pokémon objects from pokemon.json ##
 with open("pokemon.json", "r") as file:
     raw = json.load(file)["pokemon"]
     ALL_POKEMON = [Pokemon(p) for p in raw]
 
+# faster look up
 POKEMON_BY_NUM = {p._num: p for p in ALL_POKEMON}
 
-# ----------------------
-# Index
-# ----------------------
-@app.route("/", methods=["GET"])
+## index route (start page) ##
+@main.route("/", methods=["GET"])
 def index():
     return render_template("index.html", pokemon=raw)
 
-# ----------------------
-# Start game
-# ----------------------
-@app.route("/start", methods=["POST"])
+## start game route ##
+@main.route("/start", methods=["POST"])
 def start():
+    # new AI-like guesser
     guesser = PokemonGuesser(ALL_POKEMON)
 
     question = guesser.choose_best_question()
 
-    # 🏆 Hvis det bare er én igjen (edge case)
+    # one Pokémon left or no good questions left
     if question is None or guesser.should_guess():
+        # send to result page with remaining Pokémon
         return render_template(
             "result.html",
             pokemon=guesser.guess(),
             final=True
         )
 
+    # send first question with remaining Pokémon and list of asked questions
     return render_template(
         "question.html",
         question={
@@ -48,48 +47,48 @@ def start():
         asked_questions=[]
     )
 
-# ----------------------
-# Answer question
-# ----------------------
-@app.route("/guess", methods=["POST"])
+## guess route to register answers ##
+@main.route("/guess", methods=["POST"])
 def guess():
+    # read answer
     answer = request.form.get("answer")
 
+    # debugging
     if answer not in ("yes", "no"):
         return redirect("/")
 
+    # translate to bool
     answer = (answer == "yes")
 
-    # -------------------
-    # Rebuild game state
-    # -------------------
+    ## actual "smart-thinking" logic ##
+    # fetch remaining Pokémon
     remaining_nums = set(map(int, request.form.getlist("remaining[]")))
     remaining = [POKEMON_BY_NUM[n] for n in remaining_nums]
 
+    # fetch asked questions
     asked_ids = request.form.getlist("asked[]")
 
+    # new AI-like guesser for remaining
     guesser = PokemonGuesser(remaining)
 
-    # Rebuild asked questions
+    # rebuild asked questions
     for qid in asked_ids:
         q = guesser.reconstruct_question(qid)
         if q:
             guesser._asked_questions.append(q)
 
-    # -------------------
-    # Apply current answer
-    # -------------------
+    # find answered question
     qid = request.form.get("question_id")
     current_question = guesser.reconstruct_question(qid)
 
+    # debugging
     if not current_question:
         return redirect("/")
 
+    # remove non-match Pokémon
     guesser.apply_answer(current_question, answer)
 
-    # -------------------
-    # Check win condition
-    # -------------------
+    # one Pokémon left -> guess
     if guesser.should_guess():
         return render_template(
             "result.html",
@@ -97,12 +96,10 @@ def guess():
             final=True
         )
 
-    # -------------------
-    # Next question
-    # -------------------
+    # generate next "best" question
     next_question = guesser.choose_best_question()
 
-    # 🧠 Hvis systemet ikke finner flere spørsmål
+    # system unable to find next question, show result
     if next_question is None:
         return render_template(
             "result.html",
@@ -110,6 +107,7 @@ def guess():
             final=True
         )
 
+    # send new question
     return render_template(
         "question.html",
         question={
@@ -120,8 +118,6 @@ def guess():
         asked_questions=asked_ids + [qid]
     )
 
-# ----------------------
-# Run
-# ----------------------
+## run server ##
 if __name__ == "__main__":
-    app.run(debug=True)
+    main.run(debug=True)

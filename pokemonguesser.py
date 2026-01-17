@@ -1,9 +1,7 @@
+## imports ##
 import random
 
-# -------------------
-# Pokemon
-# -------------------
-
+## object class for Pokémon ##
 class Pokemon:
     def __init__(self, data: dict):
         self._num = int(data["num"])
@@ -16,6 +14,7 @@ class Pokemon:
         self._evolves_from = "prev_evolution" in data
         self._evolves_into = "next_evolution" in data
 
+    ## properties for safe frontend fetching ##
     @property
     def name(self):
         return self._name
@@ -36,9 +35,7 @@ class Pokemon:
     def weaknesses(self):
         return list(self._weaknesses)
 
-
-    # -------- Traits --------
-
+    ## methods for checking traits ##
     def has_type(self, t: str) -> bool:
         return t in self._types
 
@@ -47,6 +44,9 @@ class Pokemon:
 
     def has_weakness(self, w: str) -> bool:
         return w in self._weaknesses
+    
+    def weakness_count(self) -> int:
+        return len(self._weaknesses)
 
     def evolves_from(self) -> bool:
         return self._evolves_from
@@ -54,37 +54,30 @@ class Pokemon:
     def evolves_into(self) -> bool:
         return self._evolves_into
 
-    def weakness_count(self) -> int:
-        return len(self._weaknesses)
-
-
-# -------------------
-# Question
-# -------------------
-
+## object class for Question ##
 class Question:
     def __init__(self, qid: str, text: str, predicate):
         self._id = qid
         self._text = text
         self._predicate = predicate
 
+    # method to split and remove none matching Pokémon
     def split(self, pokemons):
         yes, no = [], []
         for p in pokemons:
             (yes if self._predicate(p) else no).append(p)
         return yes, no
 
-
-# -------------------
-# Brain
-# -------------------
-
+## actual game logic, "AI"-system ##
 class PokemonGuesser:
-    TOP_K = 3
+    TOP_K = 3 # random between top 3 questions
     MIN_SPLIT_QUALITY = 0.2
 
+    # avoid constant number questions
     MAX_NUMBER_QUESTIONS = 6
     MIN_STEPS_BETWEEN_NUMBER = 2
+    
+    # limit for no progress where number question is allowed
     NO_PROGRESS_TRIGGER = 2
 
     def __init__(self, pokemon_list):
@@ -92,7 +85,7 @@ class PokemonGuesser:
         self._remaining = pokemon_list[:]
         self._asked_questions = []
 
-        # Tracking
+        # for tracking
         self._since_number_question = 999
         self._no_progress_steps = 0
         self._last_remaining = len(self._remaining)
@@ -101,12 +94,10 @@ class PokemonGuesser:
         self._all_questions = self.generate_questions()
         self._question_map = {q._id: q for q in self._all_questions}
 
-    # -----------------------
-    # Special Questions
-    # -----------------------
-
+    # method for specifically Pokémon-number question
     def number_question(self, qid=None):
         if qid is None:
+            # find "middle" num value Pokémon and split accordingly
             sorted_pokemon = sorted(self._remaining, key=lambda p: p._num)
             mid = len(sorted_pokemon) // 2
             threshold = sorted_pokemon[mid]._num
@@ -120,46 +111,47 @@ class PokemonGuesser:
             lambda p, t=threshold: p._num < t
         )
 
+    # reconstruct number-question with right limit
     def reconstruct_question(self, qid):
         if qid.startswith("num:<"):
             return self.number_question(qid)
         return self._question_map.get(qid)
 
-    # -----------------------
-    # Question Bank
-    # -----------------------
-
+    # method to generate all other questions
     def generate_questions(self):
         questions = []
         all_types = set()
         all_weaknesses = set()
         all_weakness_counts = set()
 
+        # register all possible types, weaknsesses and amounts
         for p in self._all_pokemon:
             all_types.update(p._types)
             all_weaknesses.update(p._weaknesses)
             all_weakness_counts.add(len(p._weaknesses))
 
-        # Identity / evolution
+        # question for one or dual type Pokémon
         questions.append(Question(
             "dual_type",
             "Does your Pokémon have more than one type?",
             lambda p: p.is_dual_type()
         ))
 
+        # ask for previous evolution
         questions.append(Question(
             "evolves_from",
             "Does your Pokémon evolve from another Pokémon?",
             lambda p: p.evolves_from()
         ))
 
+        # ask for next evolution
         questions.append(Question(
             "evolves_into",
             "Does your Pokémon evolve into another Pokémon?",
             lambda p: p.evolves_into()
         ))
 
-        # Weakness thresholds
+        # ask for number of weaknesses
         for n in sorted(all_weakness_counts):
             questions.append(Question(
                 f"weakness_gt:{n}",
@@ -167,7 +159,7 @@ class PokemonGuesser:
                 lambda p, n=n: p.weakness_count() > n
             ))
 
-        # Types
+        # ask for specific type
         for t in all_types:
             questions.append(Question(
                 f"type:{t}",
@@ -175,7 +167,7 @@ class PokemonGuesser:
                 lambda p, t=t: p.has_type(t)
             ))
 
-        # Weaknesses
+        # ask for specific weakness
         for w in all_weaknesses:
             questions.append(Question(
                 f"weakness:{w}",
@@ -185,10 +177,7 @@ class PokemonGuesser:
 
         return questions
 
-    # -----------------------
-    # Scoring
-    # -----------------------
-
+    # returns quality of split, closer to 50/50 is ideal
     def split_quality(self, question):
         yes, no = question.split(self._remaining)
         total = len(self._remaining)
@@ -198,22 +187,23 @@ class PokemonGuesser:
 
         return min(len(yes), len(no)) / total
 
-    # -----------------------
-    # Brain Logic
-    # -----------------------
-
+    # AI-brain behind questioning
     def choose_best_question(self):
+        # Pokémon is known (1 left)
         if len(self._remaining) <= 1:
             return None
 
+        # do not repeat questions
         candidates = [
             q for q in self._all_questions
             if q not in self._asked_questions
         ]
 
+        # evaluete questions, strong = better, weak = worse
         strong = []
         weak = []
 
+        # use split_quality() to determine strong/weak
         for q in candidates:
             quality = self.split_quality(q)
 
@@ -222,12 +212,12 @@ class PokemonGuesser:
             elif quality > 0:
                 weak.append((quality, q))
 
-        # 🥇 Best questions
+        # sort list of strong questions and return random
         if strong:
             strong.sort(key=lambda x: x[0], reverse=True)
             return random.choice([q for _, q in strong[:self.TOP_K]])
 
-        # 🔢 Smart number usage
+        # only use number-question if progress is slow and other rules allow it
         if (
             self._number_questions_used < self.MAX_NUMBER_QUESTIONS
             and (
@@ -238,19 +228,16 @@ class PokemonGuesser:
             self._number_questions_used += 1
             return self.number_question()
 
-        # 🪫 Weak but valid
+        # sort list of weak questions and return one
         if weak:
             weak.sort(key=lambda x: x[0], reverse=True)
             return weak[0][1]
 
-        # 💀 Absolute last resort
+        # last resort use of number questions
         self._number_questions_used += 1
         return self.number_question()
 
-    # -----------------------
-    # Game Logic
-    # -----------------------
-
+    # game logic, splitting logic
     def apply_answer(self, question, answer: bool):
         before = len(self._remaining)
 
@@ -260,19 +247,22 @@ class PokemonGuesser:
 
         after = len(self._remaining)
 
-        # Progress tracking
+        # track progress
         if after >= before:
             self._no_progress_steps += 1
         else:
             self._no_progress_steps = 0
 
+        # track use of number question
         if question._id.startswith("num:<"):
             self._since_number_question = 0
         else:
             self._since_number_question += 1
 
+    # one Pokémon left, guess
     def should_guess(self):
         return len(self._remaining) <= 1
 
+    # guess Pokémon (should be correct or None)
     def guess(self):
         return self._remaining[0] if self._remaining else None

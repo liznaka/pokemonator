@@ -1,43 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Question - Pokémonator</title>
-    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="game-window">
-        <h1 class="title">Pokémonator!</h1>
+    <head>
+        <meta charset="UTF-8">
+        <title>Question - Pokémonator</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
 
-        <h2 class="question-text">{{ question.text }}</h2>
+    <body>
+        <div class="game-window">
+            <h1 class="title">Pokémonator!</h1>
 
-        <form action="/guess" method="post">
-            <div class="answer-buttons">
-                <button type="submit" name="answer" value="yes" class="button">
-                    Yes
-                </button>
-                <button type="submit" name="answer" value="no" class="button">
-                    No
-                </button>
-            </div>
+            <h2>{{ question.text }}</h2>
 
-            <!-- Hidden game state -->
-            {% for num in remaining %}
-                <input type="hidden" name="remaining[]" value="{{ num }}">
-            {% endfor %}
+            <form action="/guess" method="post">
+                <div class="answer-buttons">
+                    <button type="submit" name="answer" value="yes" class="button">
+                        Yes
+                    </button>
+                    <button type="submit" name="answer" value="no" class="button">
+                        No
+                    </button>
+                </div>
 
-            {% for qid in asked_questions %}
-                <input type="hidden" name="asked[]" value="{{ qid }}">
-            {% endfor %}
+                <!-- hidden game state -->
+                {% for num in remaining %}
+                    <input type="hidden" name="remaining[]" value="{{ num }}">
+                {% endfor %}
 
-            <input type="hidden" name="question_id" value="{{ question.id }}">
-        </form>
+                {% for qid in asked_questions %}
+                    <input type="hidden" name="asked[]" value="{{ qid }}">
+                {% endfor %}
 
-        <p class="remaining-counter">
-            Remaining Pokémon: {{ remaining|length }}
-        </p>
-    </div>
-</body>
+                <input type="hidden" name="question_id" value="{{ question.id }}">
+            </form>
+
+            <p class="remaining-counter">
+                Remaining Pokémon: {{ remaining|length }}
+            </p>
+        </div>
+    </body>
 </html>
