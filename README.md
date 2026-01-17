@@ -3,7 +3,7 @@ This project is a full-stack web application inspired by Akinator that demonstra
 
 ### Disclaimer
 This is a non-commercial project made for educational purposes. Pokémon and related trademarks are the property of Nintendo and The Pokémon Company
-
+&nbsp;
 
 ## Features
 - Interactive website with Flask
@@ -12,7 +12,7 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - Dynamic filtering of remaining Pokémon
 - Links to the official Pokédex for images and external information
 - 100% success rate in automated test simulations
-
+&nbsp;
 
 ## File structure
 - main.py # Flask webserver
@@ -20,7 +20,7 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - pokemon.json # Pokémon dataset
 - templates/ # HTML files
 - static/ # CSS, favicon
-
+&nbsp;
 
 ## How to run this program
 1. Requirements
@@ -35,7 +35,7 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 
 4. Open the local Flask server URL shown in the terminal in your browser
     - (usually: http://xxx.x.x.x:xxxx)
-
+&nbsp;
 
 ## Technologies used
 - Python 3.8+
@@ -43,17 +43,17 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - HTML
 - CSS
 - JSON dataset
-
+&nbsp;
 
 ## Sources and Credits:
 - PokeAPI: https://pokeapi.co/
 - Official Pokémon Pokédex (images and external links): https://www.pokemon.com/us/pokedex
 - Pokémon JSON Dataset (modified for this project) olitreadwell (Github): https://github.com/olitreadwell/pokemon-classic-json/blob/main/pokedex.json
-
+&nbsp;
 
 ## Limitations
 Currently only supports Generation 1 Pokémon and requires consistent and truthful user answers
-
+&nbsp;
 
 ## Extra
 This project was developed for educational purposes and demonstrates heuristic-based decision systems, state reconstruction in stateless web applications, and full-stack development using Python and Flask.
