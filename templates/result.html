@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Result - Pokémonator</title>
-        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="game-window">
-            <h1 class="title">Pokémonator!</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Pokémonator</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-window">
+        <h1 class="title">Pokémonator!</h1>
 
-            {% if pokemon %}
-                <h2>Your Pokémon is:</h2>
-                <h1 class="result-pokemon">{{ pokemon.name }}!</h1>
-                <div class="pokemon-list">
-                    <div class="pokemon-card result-card">
-                        <img src="{{ pokemon.img }}" alt="{{ pokemon.name }}" class="pokemon-img">
-                        <p class="pokemon-name">{{ pokemon.num }} {{ pokemon.name }}</p>
-                        <p class="pokemon-name">Type: {{ pokemon.type | join(', ') }}<br>
-                           Weaknesses: {{ pokemon.weaknesses | join(', ') }}</p>
-                    </div>
+        {% if pokemon %}
+            <h2>Your Pokémon is:</h2>
+            <h1 class="result-pokemon">{{ pokemon.name }}!</h1>
+
+            <div class="pokemon-list">
+                <div class="pokemon-card result-card">
+                    <img src="{{ pokemon.img }}" class="pokemon-img">
+                    <p class="pokemon-name">
+                        {{ pokemon.num }} {{ pokemon.name }}
+                    </p>
+                    <p class="pokemon-name">
+                        Type: {{ pokemon.types | join(', ') }}<br>
+                        Weaknesses: {{ pokemon.weaknesses | join(', ') }}
+                    </p>
                 </div>
-            {% else %}
-                <h1>I couldn't guess your Pokémon</h1>
-                <h3>Were you honest with me?..</h3>
-            {% endif %}
+            </div>
 
             <form action="/" method="get">
-                <button type="submit" class="button">Play again!</button>
+                <button class="button">Play again</button>
             </form>
-        </div>
-    </body>
+        {% else %}
+            <h1>I couldn't guess your Pokémon</h1>
+            <form action="/" method="get">
+                <button class="button">Try again</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
 </html>
