@@ -4,8 +4,6 @@ This project is a full-stack web application inspired by Akinator that demonstra
 ### Disclaimer
 This is a non-commercial project made for educational purposes. Pokémon and related trademarks are the property of Nintendo and The Pokémon Company
 
-<br><br>
-
 ## Features
 - Interactive website with Flask
 - Intelligent question selection using split-quality and information gain scoring
@@ -14,16 +12,12 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - Links to the official Pokédex for images and external information
 - 100% success rate in automated test simulations
 
-<br><br>
-
 ## File structure
 - main.py # Flask webserver
 - pokemonguesser.py # game logic
 - pokemon.json # Pokémon dataset
 - templates/ # HTML files
 - static/ # CSS, favicon
-
-<br><br>
 
 ## How to run this program
 1. Requirements
@@ -39,8 +33,6 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 4. Open the local Flask server URL shown in the terminal in your browser
     - (usually: http://xxx.x.x.x:xxxx)
 
-<br><br>
-
 ## Technologies used
 - Python 3.8+
 - Flask
@@ -48,22 +40,16 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - CSS
 - JSON dataset
 
-<br><br>
-
 ## Sources and Credits:
 - PokeAPI: https://pokeapi.co/
 - Official Pokémon Pokédex (images and external links): https://www.pokemon.com/us/pokedex
 - Pokémon JSON Dataset (modified for this project) olitreadwell (Github): https://github.com/olitreadwell/pokemon-classic-json/blob/main/pokedex.json
 
-<br><br>
-
 ## Limitations
 Currently only supports Generation 1 Pokémon and requires consistent and truthful user answers
-
-<br><br>
 
 ## Extra
 This project was developed for educational purposes and demonstrates heuristic-based decision systems, state reconstruction in stateless web applications, and full-stack development using Python and Flask.
 
 ### AI Assistance
-*This project was developed with the assistance of ChatGPT by OpenAI (GPT-5.2) as a support tool for debugging, refactoring, documentation, and exploring heuristic and architectural design choices. All final implementation and design decisions were made by the author.*
+*This project was developed with the assistance of ChatGPT by OpenAI (GPT-5.2) as a support tool for debugging, refactoring, documentation, and exploring heuristic and architectural design choices. All final implementation and design decisions were made by the author. - https://openai.com/nb-NO/*
