@@ -44,6 +44,7 @@ This is a non-commercial project made for educational purposes. Pokémon and rel
 - PokeAPI: https://pokeapi.co/
 - Official Pokémon Pokédex (images and external links): https://www.pokemon.com/us/pokedex
 - Pokémon JSON Dataset (modified for this project) olitreadwell (Github): https://github.com/olitreadwell/pokemon-classic-json/blob/main/pokedex.json
+- Akinator (as inspiration): https://en.akinator.com/
 
 ## Limitations
 Currently only supports Generation 1 Pokémon and requires consistent and truthful user answers
